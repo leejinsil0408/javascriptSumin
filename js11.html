@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let timerA;
+        let timerB;
+        let timerAFunction = function () {
+            document.getElementById('console1').innerHTML = 'timerA' + new Date();
+        }
+        let timerBFunction = function () {
+            document.getElementById('console2').innerHTML = 'timerB' + new Date();
+        }
+        window.onload = function () {
+            document.getElementById('b1').onclick = function () {
+                timerA = setInterval(timerAFunction, 2000)
+            }
+            document.getElementById('b2').onclick = function () {
+                timerB = setInterval(timerBFunction, 2000)
+            }
+            document.getElementById('b3').onclick = function () {
+                clearInterval(timerA)
+            }
+            document.getElementById('b4').onclick = function () {
+                clearInterval(timerB)
+            }
+        }
+
+    </script>
+</head>
+<body>
+<button id='b1'>A시계 시작</button>
+<button id='b2'>B시계 시작</button>
+<button id='b3'>A시계 멈춤</button>
+<button id='b4'>B시계 멈춤</button>
+<h1>A시계</h1>
+<div id='console1'></div>
+<h1>B시계</h1>
+<div id='console2'></div>
+</body>
+</html>

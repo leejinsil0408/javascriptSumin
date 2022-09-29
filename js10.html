@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<script>
+/*
+	타이머 : 특정 시간마다 실행되는 함수를 생성함
+	- setTimeout : 특정 시간에 1번 실행 //설정이 5초이면, 5초 후에 한 번 실행하고 더 이상 실행 X
+	- setInterval : 특정 시간마다 실행 //설정이 5초이면, 5초마다 한 번씩 실행 . 반복적으로 움직이는 화면 실행 
+
+	setTimeout(function(){
+		document.write('setTimeout'+new Date()+'<br>');
+	
+	}, 1000);
+
+	//함수는 변수에 넣어서 사용할 수 있다.
+	var myFunction=function(){
+		document.write('setTimeout'+new Date()+'<br>');
+	}
+	setTimeout(myFunction,5000);
+
+
+
+	var count=0;
+	setInterval(function(){
+		count++;
+		document.write(count+'<br>');
+	},2000);
+
+
+	var myFunction=function(){
+		var count=0;
+		count++;
+		document.write(count+":"+new Date()+'<br>');
+	}	
+	setInterval(myFunction,2000);
+*/
+
+/*
+	setInterval은 원할 때 제어할 수 있도록 생성할 때 식별자를 리턴한다.
+	이 식별자와 clearInterval 메소드를 이용해서 동작중인 타이머를 멈추게 할 수 있다.
+
+	var count=0;
+	var myFunction=function() {
+		
+		count++;
+		document.write(count+":"+new Date()+'<br>');
+	}
+
+	var aTimer=setInterval(myFunction,2000);
+	var bTimer=setInterval(myFunction,2000);
+	
+	clearInterval(aTimer);	
+
+*/
+	
+	// let count=0;
+	// let myFunction=function() {
+	// 	count++;
+	// 	document.write(count+":"+new Date()+'<br>');
+	// }
+	//
+	// window.onload=function() {
+	// 	document.getElementById("1번").onclick = aTimer()
+	// 	{
+	// 		let aTimer = setInterval(myFunction, 2000);
+	// 	}
+	//
+	// 	window.onload =function() {
+	// 		document.getElementById("2번").onclick = bTimer()
+	// 		{
+	// 			let bTimer = setInterval(myFunction, 2000);
+	// 		}
+	//
+	// 		window.onload = function() {
+	// 			document.getElementById("3번").onclick = clearInterval(aTimer);
+	// 		}
+	// 		window.onload = function() {
+	// 			document.getElementById("4번").onclick = clearInterval(bTimer);
+	// 		}
+	// 	}
+	// }
+
+
+
+		
+</script>
+	</head>
+	<body>
+	</body>
+</html>

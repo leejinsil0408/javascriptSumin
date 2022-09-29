@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script>
+/*
+function myString(){
+	let myString="<table border=1 width=70%><tr><td>1</td><td>2</td></tr>"
+	myString+="<tr><td>3</td><td>4</td></tr>";
+	myString+="</table>";
+	return myString;
+	}
+*/
+
+
+function myString(){
+	let myString="<table border=1 width=70%>"
+	let count=1;
+	for(let j=0; j<5; j++) {
+		myString+="<tr>";
+		for(let i=0;i<6;i++){
+		myString+="<td>"+ count++ +"</td>"
+		}
+		myString+="</tr>";
+	}
+	myString+="</table>";
+	return myString;
+}
+
+
+window.onload=function(){
+	document.getElementById("myButton").onclick=function(){
+		document.getElementById("console").innerHTML=myString(5,6);
+	}
+}
+		</script>
+	</head>
+	<body>
+	<button id = "myButton"> 버튼 </button>
+	<div id = "console"></div>
+	</body>
+</html>

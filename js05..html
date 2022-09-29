@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script>
+/*
+함수는? 내장 함수랑 사용자 정의 함수 내장 함수는 전문 프로그래머가 미리 만들어 놓은 함수
+사용자 정의 함수는 본인이 직접 만들어 사용한다
+
+windiw.alert("test");
+
+//prompt
+
+//.toFixed(2) 소수점 두 자리까지 출력하는 내장함수 
+
+Number()
+parseFloat()
+parseInt()
+String()
+
+*/
+
+
+var result='14.5';
+        document.write(Number(result),"<br>");
+        document.write(parseFloat(result),"<br>");
+        document.write(parseInt(result),"<br>");
+        document.write(String(result),"<br>");
+
+        var result='14';
+        document.write(Number(result),"<br>");
+        document.write(parseFloat(result),"<br>");
+        document.write(parseInt(result),"<br>");
+        document.write(String(result),"<br>");
+
+        var result='14.5원';
+        document.write(Number(result),"<br>");
+        document.write(parseFloat(result),"<br>"); //소수점 포함 숫자
+        document.write(parseInt(result),"<br>"); //소수점을 인트
+        document.write(String(result),"<br>"); 
+
+//두 수를 입력받아 더한 값을 출력해보자.
+
+let value1 = Number(window.prompt("입력"));
+let value2 = Number(window.prompt("입력2"));
+alert(value1+value2);
+
+
+//	let value = window.prompt("입력");
+//	alert(value);		
+//	let value2=132.243;
+//	alert(value2.toFixed(2));
+
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html?
