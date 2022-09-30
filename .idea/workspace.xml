@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="" />
+    <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="20220929">
+      <change afterPath="$PROJECT_DIR$/js13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/js10.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/js10.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +18,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FIbCqFtFwt2MXp3NaKtkz7xkKB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/sts-bundle/javascript"
+    "last_opened_file_path": "C:/sts-bundle/boot/07page"
   }
 }]]></component>
   <component name="RunManager">
@@ -56,10 +64,35 @@
       <updated>1664182421013</updated>
       <workItem from="1664182422622" duration="2718000" />
       <workItem from="1664357364222" duration="2333000" />
+      <workItem from="1664442651293" duration="3670000" />
+      <workItem from="1664496970767" duration="616000" />
     </task>
+    <task id="LOCAL-00001" summary="20220929">
+      <created>1664442911090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664442911090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20220929" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220929" />
   </component>
 </project>
