@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function() {
+            $("#allCheck").on("change",function (){
+            //this : 자기 자신
+            //$(this) : 형변환
+            //if(this.checked){
+            //        $("#list").children("input").prop("check", true);
+            //    }else{
+            //        $("#list").children("input").prop("checked", false);
+            //    }
+
+                if(this.checked){//체크되어 있으면 true
+                $("#list").children("input").attr("checked",true);
+                }else{
+                    $("#list").children("input").attr("checked",false);
+                }
+            alert($(this).attr("data-test")); //읽어오기
+            alert($(this).attr("data-test","test2")); //변경하기
+            alert($(this).attr("data-test")); //읽어오기
+            });
+        })
+    </script>
+
+</head>
+<body>
+<input type="checkbox" id="allCheck" data-test="test"/>ALL
+<div id="list">
+    <input type="checkbox" checked="true"/>A
+    <input type="checkbox" checked="false"/>B
+    <input type="checkbox" checked/>C
+</div>
+</body>
+</html>

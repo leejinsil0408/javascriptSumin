@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+    <script>
+        // x,y값을 입력받아 td id=x0y0 형태의 테이블을 만드시오
+        //    -문자열로 테이블을 만들고 div 찾아서 .innerHTML로 넣으면 됨
+
+        //특정 아이디 값의 백그라운드
+        // function myColor(x,y,color1) {
+        //     document.getElementById('x'+x+'y'+y).style.backgroundColor="white";
+        // }
+        // myColor(0,0,"red");
+        // myColor(0,1,"white");
+
+        let tableArray=[
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+
+            [0,1,1,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,1,1,1,0,0],
+
+            [0,0,0,1,0,0,0,0,1,1,1,1,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0],
+
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        ];
+    function madeTable(y,x) {
+        let str = "";
+        str += "<table border='1' width='300' height='300'>";
+        for (let y = 0; y < pan.length; y++) {
+            str += "<tr>"
+            for (let x = 0; x < pan.length; x++) {
+                str += `<td width=20 height=20 id=y${y}x${x}>`;
+                str += "</td>";
+            }
+            str = "</tr>";
+        }
+        str += "</table>";
+
+    }
+        function myColor(x,y,color1) {
+                 document.getElementById('x'+x+'y'+y).style.backgroundColor=color1;
+             }
+
+        window.onload=function() {
+            document.getElementById("console").innerHTML = str;
+
+            for (let y = 0; y < pan.length; y++) {
+                for (let x = 0; x < pan[y].length; x++) {
+
+                    if (pan[y][x] == 0) {
+
+                        MyColor(0, 0, "red");
+
+                    } else if (pan[y][x] == 1) {
+
+                        MyColor(0, 1, "white");
+                    }
+                }
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+<div id="console"></div>
+
+</body>
+</html>

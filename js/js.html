@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var tableMove=[
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+
+            [0,0,1,1,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,1,1,1,0,0],
+
+            [0,0,0,0,1,0,0,0,0,1,1,1,1,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0],
+
+            [0,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0],
+
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+ 
+            ];
+
+
+        function madeTable(y,x){
+            var str="";
+            str+="<table border=5 width=1300 height=300>"
+            for(var i=0;i<y;i++){
+                str+="<tr>"
+                for(var j=0;j<x;j++){
+                    str+=`<td id=y${i}x${j}>`;
+                    str+="</td>";
+                }
+
+                str+="</tr>"
+                    
+            }
+
+            str+="</table>"
+
+
+            return str;
+        }
+
+        function drawing(arr){
+            var y=arr.length;
+            var x=arr[0].length;
+            for(var i=0;i<y;i++){
+                for(var j=0;j<x;j++){
+                    if(arr[i][j]==1){
+                        document.getElementById("y"+i+"x"+j).setAttribute("bgcolor","red");
+                    }
+                }
+            }
+        }
+        function f1(){
+            clearInterval(f2)
+            clearInterval(f3)
+            clearInterval(f4)
+            clearInterval(f1)
+            f1=setInterval(function(){            
+                for(var i=0;i<tableMove.length;i++){
+                    var temp1=tableMove[i].shift();
+                    tableMove[i].push(temp1);
+                }               
+                document.getElementById("table").innerHTML=madeTable(tableMove.length,tableMove[0].length);
+                drawing(tableMove);
+            },60);
+        };
+
+        function f2(){
+            clearInterval(f1)
+            clearInterval(f3)
+            clearInterval(f4)
+            clearInterval(f2)
+            f2=setInterval(function(){
+                for(var i=0;i<tableMove.length;i++){
+                    var temp2=tableMove[i].pop();
+                    tableMove[i].unshift(temp2);
+            } 
+                document.getElementById("table").innerHTML=madeTable(tableMove.length,tableMove[0].length);
+                drawing(tableMove);
+            },60);
+        };
+
+
+        function f3(){
+            clearInterval(f1)
+            clearInterval(f2)
+            clearInterval(f4)
+            clearInterval(f3)
+            f3=setInterval(function(){
+                var temp3=tableMove.shift();
+                tableMove.push(temp3);
+                document.getElementById("table").innerHTML=madeTable(tableMove.length,tableMove[0].length);
+                drawing(tableMove);
+            },60);
+                   
+        };
+
+        function f4(){
+            clearInterval(f3)
+            clearInterval(f2)
+            clearInterval(f1)
+            clearInterval(f4)
+            f4=setInterval(function(){
+                var temp4=tableMove.pop();
+                tableMove.unshift(temp4)
+                document.getElementById("table").innerHTML=madeTable(tableMove.length,tableMove[0].length);
+                drawing(tableMove);
+            },60);
+        };
+        function f5(){
+            clearInterval(f3)
+            clearInterval(f2)
+            clearInterval(f1)
+            clearInterval(f4)
+            
+        }
+        function f6(){
+            clearInterval(f1)
+            clearInterval(f2)
+            clearInterval(f4)
+            clearInterval(f3)
+            tableMove=[
+                [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+
+                [0,0,1,1,1,1,1,0,0,0,1,1,0,0,0,1,1,0,0,0,1,1,1,0,1,1,1,0,0],
+
+                [0,0,0,0,1,0,0,0,0,1,1,1,1,0,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0],
+
+                [0,0,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0],
+
+                [0,0,0,0,1,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,0],
+
+                [0,0,0,0,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,0,0,0,1,0,0,0],
+
+                [0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0],
+
+                [0,0,1,1,1,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0],
+
+                [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+ 
+            ];           
+            document.getElementById("table").innerHTML=madeTable(tableMove.length,tableMove[0].length);
+            drawing(tableMove);
+        }
+        
+
+
+
+
+
+
+        window.onload=function(){
+            document.getElementById("table").innerHTML=madeTable(tableMove.length,tableMove[0].length);
+            drawing(tableMove);
+            document.getElementById("left").onclick=f1;
+            document.getElementById("right").onclick=f2;
+            document.getElementById("up").onclick=f3;
+            document.getElementById("down").onclick=f4;
+            document.getElementById("stop").onclick=f5;
+            document.getElementById("reset").onclick=f6;
+            
+        }
+        
+          
+
+    </script>
+
+</head>
+<body>
+    <div id="table"></div>
+    <button id="left"> left </button>
+    <button id="right"> right </button>
+    <button id="up"> up </button>
+    <button id="down"> down </button>
+    <button id="stop"> stop </button>
+    <button id="reset"> reset </button>
+    
+</body>
+</html>
