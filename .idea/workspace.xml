@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="20221005">
-      <change afterPath="$PROJECT_DIR$/js/gogo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/1310130000502.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/hqdefault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/jq01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/jq02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/jq03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/jq04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js05..html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js06.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js07.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js08.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js09.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/js13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/machine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js03.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js04.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js05..html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js06.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js07.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js08.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js09.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js13.html" beforeDir="false" />
-    </list>
+    <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="20221005" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +71,7 @@
       <workItem from="1664960762637" duration="174000" />
       <workItem from="1664960944545" duration="70000" />
       <workItem from="1664961067270" duration="663000" />
-      <workItem from="1664961758023" duration="3217000" />
+      <workItem from="1664961758023" duration="3239000" />
     </task>
     <task id="LOCAL-00001" summary="20220929">
       <created>1664442911090</created>
@@ -131,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664960777276</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20221005">
+      <created>1664965029131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664965029131</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
