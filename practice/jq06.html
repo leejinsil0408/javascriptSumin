@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #menu, #menu ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #menu>li>div{
+            margin-bottom: 2px;
+            height:35px;
+            line-height: 35px;
+            background-color: hotpink;
+            cursor: pointer;
+        }
+
+        ul#menu {
+            width: 200px;
+            text-indent: 35px;
+        }
+
+        ul.sub li {
+            background: #ffc0d9;
+            line-height: 35px;
+            margin-bottom: 2px;
+        }
+
+        ul.sub li a{
+            display:block;
+            text-decoration: none;
+            color:#fff;
+        }
+        ul.sub li:hover{
+            background: #000000;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".sub").hide();
+            $("#menu>li>div").on("mouseenter", function () {
+                $(".sub").slideUp(300);
+               $(this).next().stop().slideDown(300);
+            });
+        })
+    </script>
+</head>
+<body>
+<ul id="menu">
+    <li>
+        <div>title</div>
+        <ul class="sub">
+            <li><a href="#">sub1</a></li>
+            <li><a href="#">sub2</a></li>
+            <li><a href="#">sub3</a></li>
+        </ul>
+    </li>
+    <li>
+        <div>title</div>
+        <ul class="sub">
+            <li><a href="#">sub1</a></li>
+            <li><a href="#">sub2</a></li>
+        </ul>
+
+    </li>
+    <li>
+        <div>title</div>
+        <ul class="sub">
+            <li><a href="#">sub1</a></li>
+            <li><a href="#">sub2</a></li>
+            <li><a href="#">sub3</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
