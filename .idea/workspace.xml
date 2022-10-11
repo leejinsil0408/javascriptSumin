@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="20221006">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/jq07.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +78,7 @@
       <workItem from="1665047745843" duration="33000" />
       <workItem from="1665047784304" duration="44000" />
       <workItem from="1665047834982" duration="2310000" />
+      <workItem from="1665482810495" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="20220929">
       <created>1664442911090</created>
