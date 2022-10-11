@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="20221005" />
+    <list default="true" id="b1eab0b5-dd1a-4c00-86bc-32ecf13a5f69" name="변경" comment="20221006">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +75,10 @@
       <workItem from="1664960944545" duration="70000" />
       <workItem from="1664961067270" duration="663000" />
       <workItem from="1664961758023" duration="3239000" />
+      <workItem from="1665014563955" duration="57000" />
+      <workItem from="1665047745843" duration="33000" />
+      <workItem from="1665047784304" duration="44000" />
+      <workItem from="1665047834982" duration="2310000" />
     </task>
     <task id="LOCAL-00001" summary="20220929">
       <created>1664442911090</created>
@@ -101,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664965029131</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20221006">
+      <created>1665014598695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665014598695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +137,7 @@
     <MESSAGE value="20220929" />
     <MESSAGE value="20220930" />
     <MESSAGE value="20221005" />
-    <option name="LAST_COMMIT_MESSAGE" value="20221005" />
+    <MESSAGE value="20221006" />
+    <option name="LAST_COMMIT_MESSAGE" value="20221006" />
   </component>
 </project>
